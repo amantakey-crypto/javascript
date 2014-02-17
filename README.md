@@ -1,4 +1,4 @@
-# Airbnb JavaScript Style Guide() {
+# Airbnb JavaScript Style Guide(Customized for .Net) {
 
 *A mostly reasonable approach to JavaScript*
 
@@ -727,24 +727,8 @@
 
 ## <a name='whitespace'>Whitespace</a>
 
-  - Use soft tabs set to 2 spaces
+  - Use the standard Visual Studio formatting and indentation. Do not manually align same level statements. Visual Studio does it for you when you add `;` or ending bracket for statement block. If VS is not doing allignment there is some issue in lines above or below which is not allowing VS to do code indentation.
 
-    ```javascript
-    // bad
-    function() {
-    ∙∙∙∙var name;
-    }
-
-    // bad
-    function() {
-    ∙var name;
-    }
-
-    // good
-    function() {
-    ∙∙var name;
-    }
-    ```
 
   - Place 1 space before the leading brace.
 
@@ -770,16 +754,6 @@
       age: '1 year',
       breed: 'Bernese Mountain Dog'
     });
-    ```
-
-  - Set off operators with spaces.
-
-    ```javascript
-    // bad
-    var x=y+5;
-
-    // good
-    var x = y + 5;
     ```
 
   - Place an empty newline at the end of the file.
